@@ -1,0 +1,49 @@
+.modal-btn {
+  @include font(16px, 700, 30px);
+    
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+    color: #ffffff;
+    background-color: var(--background-color);
+  
+    min-width: 200px;
+    height: 50px;
+    border: 5px solid var(--background-color);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: var(--background-color);
+    --angle: 0deg;
+    width: 20vmin;
+    height: 8vmin;
+    border: 0.35vmin solid;
+    border-image: linear-gradient(var(--angle), #39ff14, #faed27, #ff073a, #4666ff) 5;
+    animation: 60s rotate cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+    
+    cursor: pointer;
+    /*border-radius: 3vmin;*/
+  }
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ukr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial=scale=1.0">
+    <title>Webstudio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" rel="stylesheet">
+    <link href="./css/main.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a class="logo-link link" href="index.html">
+                    <span class="logo blue-part" lang="en">HoReCa </span><span class="logo black-part" lang="en">4.0</span>
+                </a>
+            <ul class="navigation-list">
+                <li class="navigation-list-item list">
+                    <a class="navigation-list-link active link" href="index.html">Про проект</a>
+                </li>
+                <li class="navigation-list-item list">
+                    <a class="navigation-list-link link" href="portfolio.html">Каталог</a>
+                </li>
+                <li class="navigation-list-item list">
+                    <a class="navigation-list-link link" href="#">Контакти</a>
+                </li>
+            </ul>
+            </nav>
+            <ul class="contact-list">
+                <li class="contact-list-item list">
+                    <a class="contact-list-link link" href="mailto:k.dzhyviriaha@cleanpoint.ua">
+                        <svg class="contact-list-icon envelope">
+                            <use href="./images/icons/symbol-defs.svg#icon-envelopesvg">
+                            </use>
+                        </svg>
+                        k.dzhyviriaha@cleanpoint.ua
+                    </a>
+                </li>
+                
+                <li class="contact-list-item list">
+                    <a class="contact-list-link link" href="tel:+380678254456">
+                        <svg class="contact-list-icon smart-phone">
+                            <use href="./images/icons/symbol-defs.svg#icon-smart-phonesvg">
+                            </use>
+                        </svg>
+                        +38 067 825 44 56
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </header>
+    <main>
+        <!--HERO-->
+        <section class="hero-block overlay">
+            <div class="container">
+                <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ <br> ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+                <button class="hero-button modal-btn" type="button" data-modal-open>Детальніше</button>
+            </div>
+            
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-block-address">
+                <a class="logo-link link" href="index.html">
+                    <span class="logo blue-part" lang="en">HoReCa </span><span class="logo white-part" lang="en">4.0</span>
+                </a>
+                <address class="address">
+                    <ul class="address-list">
+                        <li class="address-list-item list">
+                            <a class="address-list-link physical-address link" href="https://goo.gl/maps/CEuguE6YdpML6xbj7"
+                                target="_blank">г.Київ, вул. Колекторна, 44</a>
+                        </li>
+                        <li class="address-list-item list">
+                            <a class="address-list-link link" href="mailto:k.dzhyviriaha@cleanpoint.ua">k.dzhyviriaha@cleanpoint.ua</a>
+                        </li>
+                        <li class="address-list-item list link">
+                            <a class="address-list-link link" href="tel:+380678254456">+38 067 825 44 56</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            
+            
+
+            <div class="footer-block-form">
+                <form class="footer-modal-form">
+                    <p class="footer-call-to-action">потрібна індивідуальна пропозиція?</p>
+                    <div class="footer-modal-form-wrapper">
+                        <input type="email" name="user-email" class="footer-modal-form-input" placeholder="E-mail">
+                        <button type="submit" class="footer-modal-form-btn modal-btn">Підписатись
+                            <svg class="send-icon">
+                                <use href="./images/icons/symbol-defs.svg#icon-icon-send">
+                                </use>
+                            </svg>
+    
+                        </button>
+                    </div>
+                    
+                </form>
+            </div>
+            
+
+        </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="close-icon">
+                    <use href="./images/icons/symbol-defs.svg#icon-Vector">
+                    </use>
+                </svg>
+            </button>
+            <form action="#" class="modal-form">
+                <p class="call-to-action">Оставьте свои данные, мы вам перезвоним</p>
+            <label class="modal-form-input-label">
+                Имя
+                <span class="modal-form-input-wrapper">
+                <input type="text" name="user-name" class="modal-form-input">
+                <svg class="modal-form-icon">
+                    <use href="./images/icons/symbol-defs.svg#icon-person-black">
+                    </use>
+                </svg>
+                </span>
+            </label>
+                
+            <label class="modal-form-input-label">
+                Телефон
+                <span class="modal-form-input-wrapper">
+                <input type="tel" name="user-phone" class="modal-form-input">
+                <svg class="modal-form-icon">
+                    <use href="./images/icons/symbol-defs.svg#icon-phone-black">
+                    </use>
+                </svg>
+                </span>
+            </label>
+                
+            <label class="modal-form-input-label">
+                    Почта
+                <span class="modal-form-input-wrapper">
+                <input type="email" name="user-email" class="modal-form-input">
+                <svg class="modal-form-icon">
+                    <use href="./images/icons/symbol-defs.svg#icon-email-black">
+                    </use>
+                </svg>
+                </span>
+            </label>
+                
+            <label class="modal-form-input-label">
+                    Комментарий
+                <textarea name="user-comment" class="modal-form-comment" placeholder="Введите текст"></textarea>
+            </label>
+                
+                <input type="checkbox" name="user-policy" id="policy-check" class="modal-form-checkpolicy visually-hidden">
+                <label for="policy-check" class="modal-form-label-policy">Соглашаюсь с рассылкой и принимаю  
+                    <a class="agreement-terms link" href="#">Условия договора</a> 
+                </label>
+                <button type="submit" class="modal-form-btn modal-btn">Отправить</button>
+
+
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+</body>
+</html>

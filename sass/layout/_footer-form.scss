@@ -1,0 +1,90 @@
+.footer-block-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    
+  }
+  
+  .footer-call-to-action {
+    @include font(14px, 700, 16px);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .footer-modal-form-wrapper {
+    display: flex;
+    width: 570px;
+    /*align-items: flex-start;*/
+    
+  }
+  
+  .footer-modal-form-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--background-color-additional);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.15));
+  
+    padding-left: 12px;
+    
+  
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.250;
+  
+  
+  &::placeholder {
+    @include font(16px, 400, 20px);
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+  
+  .footer-modal-form-btn {
+    border: 1px solid var(--accent-color-1);
+    padding-left: 29px;
+    padding-right: 28px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 12px;
+
+    &:hover,
+    &:focus {
+      background-color: var(--background-color);
+      color: #ffffff;
+      --angle: 0deg;
+    width: 20vmin;
+    height: 8vmin;
+    border: 0.35vmin solid;
+    border-image: linear-gradient(var(--angle), #39ff14, #faed27, #ff073a, #4666ff) 1;
+    animation: 60s rotate cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+    
+    cursor: pointer;
+    border-radius: 2vmin;
+  }
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+    
+  }
+  
+  .send-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+  
+  }
